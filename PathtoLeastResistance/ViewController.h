@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GridViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
 
+@property (strong, nonatomic) IBOutlet UITextField *rowField;
+
+@property (strong, nonatomic) IBOutlet UITextField *columnField;
+
+@property (strong, nonatomic) UIButton *doneButton;
+
+- (IBAction)createGridTapped:(id)sender;
 
 @end
 
